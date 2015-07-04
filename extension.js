@@ -1,7 +1,7 @@
 (function () {
     
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "Absence";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -56,18 +56,18 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "AbsentBot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupVolume: 100, // 0-100
+        startupEmoji: true, // true or false
         autowoot: true,
         smartSkip: true,
         cmdDeletion: true,
-        maximumAfk: 120,
+        maximumAfk: 90,
         afkRemoval: true,
-        maximumDc: 60,
+        maximumDc: 120,
         bouncerPlus: true,
         blacklistEnabled: true,
         lockdownEnabled: false,
@@ -85,7 +85,7 @@
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "This song does not fit the room theme. "],
+            ["theme", "This song does not fit the room theme, we only allow EDM and Nightcore "],
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
@@ -97,8 +97,8 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
-        filterChat: true,
+        motd: "Temporary motd",
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
@@ -108,7 +108,7 @@
         youtubeLink: null,
         website: null,
         intervalMessages: [],
-        messageInterval: 5,
+        messageInterval: 1,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
